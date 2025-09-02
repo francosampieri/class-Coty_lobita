@@ -11,3 +11,12 @@ Sin embargo, el comportamiento de esa referencia depende de si el objeto es muta
 - Objetos mutables
  -list, dict, set, objetos definidos por el usuario, se pueden modificar en memoria, Si varias variables apuntan al mismo objeto mutable, los cambios se reflejan en todas.
 Python no tiene variables estrictamente "por valor" o "por referencia" como Java, Lo que sí tiene es un modelo de asignación por referencia a objetos, y el comportamiento final depende de si el objeto es mutable (parece referencia) o inmutable (parece valor)."""
+"""11_ 
+ Pedir dos palabras por teclado, indicar si son iguales"""
+palabra1 = input("Escribe la primera palabra: ")
+palabra2 = input("Escribe la segunda palabra: ")
+
+if palabra1 == palabra2:
+    print("Las palabras SON iguales.")
+else:
+    print("Las palabras NO son iguales.")
