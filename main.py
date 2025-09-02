@@ -1,3 +1,4 @@
+
 #Ejercicio 19: #
 
 class Operacion_matematicas:
@@ -43,3 +44,26 @@ class Calculo:
 
 laconchadetumadre = Calculo()
 laconchadetumadre.main()
+#Ejercicio 4#
+def leer_numero():
+    num=int(input("Ingrese un numero de 3 digitos: "))
+    while not 100<=num<=999:
+        num=int(input("ERROR: Ingrese un numero de 3 digitos: "))
+    return num
+
+def descomponer_numero(num):
+    d1=num%10
+    num=num//10
+    d2=num%10
+    num=num//10
+    d3=num%10
+    return d1,d2,d3
+def sumar_numeros(d1,d2,d3):
+    suma=d3+d2+d1
+    return suma
+
+   
+num=leer_numero()
+d1,d2,d3=descomponer_numero(num)
+suma=sumar_numeros(d1,d2,d3)
+print(f"La suma de los digitos del numero {num} es {suma}")
