@@ -1,3 +1,4 @@
+
 #Ejercicio 4
 def dinero(monto):
     billetes = [200, 100, 50, 20, 10, 5, 2, 1]
@@ -7,7 +8,7 @@ def dinero(monto):
     
     # Billetes
     for i in billetes:
-        cantidad = entero // i      # dividir por la denominación correcta
+        cantidad = entero // i
         entero %= i
         if cantidad > 0:
             print(f"{cantidad} billete(s) de {i}")
@@ -28,7 +29,7 @@ dinero(monto)
 contador = 0
 vocale = ["a", "e", "i", "o", "u"]
 cadena = input(" ingrese una cadena")
-can_num = f2 (cadena)
+can_num = (cadena)
 for i in cadena.lower():
     if i in vocale:
         contador +=1
@@ -38,7 +39,7 @@ print("longitud palabra" ,can_num)
 
 #Ejercicio 12
 palabra = "Hipopotamo"
-for i in range(f2(palabra)):
+for i in range((palabra)):
     if i == 3 or i == 4: 
         print(palabra[i])
 #Ejercicio 20
@@ -88,5 +89,28 @@ class OperacionesFracciones:
         print("RESULTADO MULTIPLICACION DE FRACCION", ResultadoMultiplicacion)
         print("RESULTADO DIVISION DE FRACCION", ResultadoDivision)
 OperacionesFracciones.main()
-        
-        
+
+valorDecimal = float(input("Ingrese un número decimal: "))
+
+print("\n--- Resultados del CASTEO ---")
+
+#entero
+valorEntero = int(valorDecimal)
+print("Entero (int):", valorEntero)
+
+#texto
+valorTexto = str(valorDecimal)
+print("Texto (str):", valorTexto, " -> Tipo:", type(valorTexto))
+
+#booleano
+valorBooleano = bool(valorDecimal)
+print("Booleano (bool):", valorBooleano)
+
+#float 
+valorFlotante = float(valorDecimal)
+print("Flotante (float):", valorFlotante)
+
+#redondear
+valorRedondeado = round(valorDecimal)
+print("Redondeado (round):", valorRedondeado)
+
