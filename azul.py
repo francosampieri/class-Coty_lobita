@@ -1,3 +1,32 @@
+<<<<<<< renzo-feli-toto(azul)
+
+
+
+valorDecimal = float(input("Ingrese un número decimal: "))
+
+print("\n--- Resultados del CASTEO ---")
+
+#entero
+valorEntero = int(valorDecimal)
+print("Entero (int):", valorEntero)
+
+#texto
+valorTexto = str(valorDecimal)
+print("Texto (str):", valorTexto, " -> Tipo:", type(valorTexto))
+
+#booleano
+valorBooleano = bool(valorDecimal)
+print("Booleano (bool):", valorBooleano)
+
+#float 
+valorFlotante = float(valorDecimal)
+print("Flotante (float):", valorFlotante)
+
+#redondear
+valorRedondeado = round(valorDecimal)
+print("Redondeado (round):", valorRedondeado)
+
+
 #Ejercicio 4
 def dinero(monto):
     billetes = [200, 100, 50, 20, 10, 5, 2, 1]
